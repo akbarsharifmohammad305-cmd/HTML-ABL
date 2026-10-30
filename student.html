@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Dashboard</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: lightgray;
+            margin: 0;
+        }
+
+        header {
+            background-color: navy;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .sidebar {
+            background-color: darkblue;
+            padding: 15px;
+        }
+
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+
+        table {
+            width: 100%;
+            background-color: white;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid gray;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: skyblue;
+        }
+
+        .bar {
+            background-color: lightgray;
+            width: 100%;
+        }
+
+        .progress {
+            background-color: green;
+            color: white;
+            width: 85%;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Dashboard</h1>
+        <p>Welcome, Student!</p>
+    </header>
+
+    <div class="sidebar">
+        <a href="#details">Details</a>
+        <a href="#attendance">Attendance</a>
+        <a href="#results">Results</a>
+        <a href="#exams">Exams</a>
+        <a href="#news">Announcements</a>
+    </div>
+
+    <div class="content">
+
+        <h2 id="details">Student Details</h2>
+        <div class="card">
+            <p>Name: Rahul Kumar</p>
+            <p>Roll Number: 26B01</p>
+            <p>Course: B.Tech CSE</p>
+            <p>Semester: 1st Semester</p>
+        </div>
+
+        <h2 id="attendance">Attendance</h2>
+        <div class="card">
+            <p>Overall Attendance: 85%</p>
+            <div class="bar">
+                <div class="progress">85%</div>
+            </div>
+        </div>
+
+        <h2 id="results">Semester Results</h2>
+        <table>
+            <tr>
+                <th>Subject</th>
+                <th>Marks</th>
+            </tr>
+            <tr>
+                <td>Mathematics</td>
+                <td>88</td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>92</td>
+            </tr>
+            <tr>
+                <td>Physics</td>
+                <td>80</td>
+            </tr>
+        </table>
+
+        <h2 id="exams">Exam Schedule</h2>
+        <div class="card">
+            <p>Mathematics - 10 November</p>
+            <p>Python - 12 November</p>
+            <p>Physics - 15 November</p>
+        </div>
+
+        <h2 id="news">Announcements</h2>
+        <div class="card">
+            <p>1. Submit assignments on time.</p>
+            <p>2. Prepare for semester examinations.</p>
+            <p>3. Check your attendance regularly.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
